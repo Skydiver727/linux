@@ -1616,12 +1616,8 @@ static void rtl8xxxu_print_chipinfo(struct rtl8xxxu_priv *priv)
 static int rtl8xxxu_identify_chip(struct rtl8xxxu_priv *priv)
 {
 	struct device *dev = &priv->udev->dev;
-<<<<<<< HEAD
-	u32 val32, bonding;
-=======
 	struct ieee80211_hw *hw = priv->hw;
 	u32 val32, bonding, sys_cfg;
->>>>>>> 7c4d440f85da (rtl8xxxu: Add modified rtl8xxxu)
 	u16 val16;
 
 	val32 = rtl8xxxu_read32(priv, REG_SYS_CFG);
